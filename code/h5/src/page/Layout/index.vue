@@ -1,9 +1,9 @@
 <template>
   <div class="Layout-box">
-    <div @click="handle(item.route)"
-         v-for="(item, index) in list"
-         :key="index"
-         class="button">异步加载列表封装</div>
+    <router-link :to="item.route"
+                 v-for="(item, index) in list"
+                 :key="index"
+                 class="button">{{item.name}}</router-link>
   </div>
 </template>
 

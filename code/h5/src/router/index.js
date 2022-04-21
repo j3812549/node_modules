@@ -16,6 +16,15 @@ export const constantRouterMap = [
     },
     component: () =>
       import('@/page/Layout/index')
+  },
+  {
+    path: '/ListWarp',
+    meta: {
+      title: 'vue-list-warp',
+      keepAlive: false
+    },
+    component: () =>
+      import('@/page/ListWarp/index')
   }
 ]
 
